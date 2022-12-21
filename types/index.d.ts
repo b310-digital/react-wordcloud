@@ -171,4 +171,4 @@ export const defaultCallbacks: CallbacksProp;
 
 export const defaultOptions: OptionsProp;
 
-export default function ReactWordcloud(props: Props): JSX.Element;
+export function ReactWordcloud(props: Props): JSX.Element;
