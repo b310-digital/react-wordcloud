@@ -52,7 +52,6 @@
     "@types/seedrandom": "^2.4.28",
     "eslint-config-xo-react": "^0.23.0",
     "eslint-config-xo-typescript": "^0.31.0",
-    "husky": "^4.2.5",
     "microbundle": "^0.15.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -61,11 +60,6 @@
   },
   "peerDependencies": {
     "react": "^18.2.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run prepare && npm run lint"
-    }
   },
   "prettier": {
     "bracketSpacing": true,
