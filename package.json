@@ -19,9 +19,14 @@
     "lint": "xo --fix; tsc",
     "prepare": "npm run clean; npm run build"
   },
-  "main": "dist/index.cjs",
-  "module": "dist/index.cjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
   "source": "index.js",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
   "type": "module",
   "typings": "types/index.d.ts",
   "files": [
