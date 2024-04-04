@@ -14,7 +14,7 @@
     "d3"
   ],
   "scripts": {
-    "build": "microbundle --jsx React.createElement",
+    "build": "microbundle --jsx React.createElement --no-generateTypes",
     "clean": "rm -rf dist",
     "lint": "xo --fix; tsc",
     "prepare": "npm run clean; npm run build"
@@ -22,6 +22,7 @@
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "source": "index.js",
+  "typings": "types/index.d.ts",
   "files": [
     "dist",
     "types/index.d.ts"
